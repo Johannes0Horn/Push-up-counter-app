@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="android.example.workoutapp">
+    <uses-sdk />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:roundIcon="@mipmap/ic_launcher2_round"
+        android:theme="@style/Theme.WorkoutApp">
+        <activity android:name=".ListView"></activity>
+        <activity
+            android:name=".ListExercisesActivity"
+            android:label="@string/title_activity_list_exercises"
+            android:theme="@style/Theme.WorkoutApp.NoActionBar" />
+        <activity
+            android:name=".ListWorkoutPrograms"
+            android:label="@string/title_activity_list_exercises"
+            android:theme="@style/Theme.WorkoutApp.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+            android:label="@string/main_activity_title"
+            />
+        <activity
+            android:name=".SplashScreenActivity"
+            android:theme="@style/AppTheme.workoutapp">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".PushupDescriptionActivity"></activity>
+        <activity android:name=".SquatDescriptionActivity"></activity>
+        <activity android:name=".JumpingJackDescriptionActivity"></activity>
+        <activity android:name=".PlankDescriptionActivity"></activity>
+
+
+        <activity android:name=".SquatsActivity"></activity>
+        <activity android:name=".JumpingJacksActivity"></activity>
+
+
+        <activity android:name=".Exercise1ActivityDone"></activity>
+        <activity android:name=".Exercise2ActivityDone"></activity>
+        <activity android:name=".Exercise3ActivityDone"></activity>
+        <activity android:name=".Exercise4ActivityDone"></activity>
+
+        <activity android:name=".PushupActivity"></activity>
+        <activity android:name=".Exercise_jumpingjack"></activity>
+        <activity android:name=".Exercise_plank"></activity>
+        <activity android:name=".Exercise_squat"></activity>
+        <activity android:name=".Exercise_pushups"></activity>
+
+        <activity android:name=".ProgramCardio"></activity>
+        <activity android:name=".ProgramAbs"></activity>
+
+        <activity android:name=".Program1Done"></activity>
+        <activity android:name=".Program2Done"></activity>
+
+
+        <activity android:name=".PreferencesActivity"
+                android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+                android:label="@string/preferences_activity_title"></activity>
+
+
+
+
+    </application>
+
+</manifest>

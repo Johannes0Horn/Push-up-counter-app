@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="android.example.workoutapp">
+    <uses-sdk />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+<<<<<<< HEAD
+        android:theme="@style/Theme.WorkoutApp"
+        >
+        <activity android:name=".ListView" />
+||||||| ae0d824
+        android:theme="@style/Theme.WorkoutApp">
+        <activity android:name=".ListView"></activity>
+=======
+        android:roundIcon="@mipmap/ic_launcher2_round"
+        android:theme="@style/Theme.WorkoutApp">
+        <activity android:name=".ListView"></activity>
+>>>>>>> a241b402c019d7a2eb8d0f0c60e923a7653326a0
+        <activity
+            android:name=".ListExercisesActivity"
+            android:label="@string/title_activity_list_exercises"
+            android:theme="@style/Theme.WorkoutApp.NoActionBar" />
+        <activity android:name=".Exercise1Activity" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+            android:label="@string/main_activity_title"
+            />
+        <activity
+            android:name=".SplashScreenActivity"
+            android:theme="@style/AppTheme.workoutapp">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".PushupDescriptionActivity" />
+        <activity android:name=".Exercise1ActivityDone" />
+        <activity android:name=".PushupActivity" />
+        <activity android:name=".PreferencesActivity"
+                android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+                android:label="@string/preferences_activity_title"></activity>
+
+
+
+
+    </application>
+
+</manifest>
